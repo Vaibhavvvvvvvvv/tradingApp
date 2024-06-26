@@ -6,7 +6,7 @@ function Awards() {
       <div className="row">
         <div className="col-6 p-5">
           {/* <img src="media/images/largestBroker.svg" /> */}
-          <img src="https://zerodha.com/static/images/products-kite.png"/>
+          <img src="media\images\ZERODHA-10.png"/>
         </div>
         <div className="col-6 p-5 mt-5">
           <h1>Largest stock broker in India</h1>
@@ -42,7 +42,7 @@ function Awards() {
               </ul>
             </div>
           </div>
-          <img src="https://static.vecteezy.com/system/resources/previews/000/609/739/original/finance-logo-and-symbols-vector-concept-illustration.jpg" style={{ width: "90%" }} />
+          <img src="media\images\presslogo.jpg" style={{ width: "100%" }} />
         </div>
       </div>
     </div>

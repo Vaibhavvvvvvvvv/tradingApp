@@ -29,7 +29,7 @@ function Stats() {
           </p>
         </div>
         <div className="col-6 p-5">
-          <img src="https://zerodha.com/static/images/products-console.png" style={{ width: "90%" }} />
+          <img src="media\images\stats.png" style={{ width: "100%", height:"50%"}} />
           <div className="text-center">
             <a href="" className="mx-5" style={{ textDecoration: "none" }}>
               Explore our products{" "}
