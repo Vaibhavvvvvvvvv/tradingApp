@@ -1,14 +1,14 @@
-import React from 'react'
-import Hero from './Hero'
-import Ticket from './Ticket'
-const Support = () => {
+import React from "react";
+import Hero from "./Hero";
+import Ticket from "./Ticket";
+
+function PricingPage() {
   return (
-    <div>
-<h1>support</h1>
-<Hero/>
-<Ticket/>      
-    </div>
-  )
+    <>
+      <Hero />
+      <Ticket />
+    </>
+  );
 }
 
-export default Support
+export default PricingPage;
