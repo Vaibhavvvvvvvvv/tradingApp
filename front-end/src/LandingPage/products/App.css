@@ -1,0 +1,14 @@
+.responsive-img {
+    width: 200px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    color: blue !important; /* Change text color to blue on hover */
+  }
+  

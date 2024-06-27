@@ -1,11 +1,22 @@
-import React from 'react'
-
-const RightImg = () => {
+import React from "react";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+function RightImg({ imageURL, productName, productDesription, learnMore }) {
   return (
-    <div>
-<h1>right</h1>      
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-6 p-5 mt-5">
+          <h1>{productName}</h1>
+          <p>{productDesription}</p>
+          <div>
+            <a href={learnMore}>Learn More <ArrowForwardIosIcon /></a>
+          </div>
+        </div>
+        <div className="col-6">
+          <img src={imageURL} />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default RightImg
+export default RightImg;
