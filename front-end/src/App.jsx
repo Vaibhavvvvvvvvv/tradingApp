@@ -8,6 +8,7 @@ import Products from './LandingPage/products/Products';
 import Signup from './LandingPage/signup/SignUp';
 import Support from './LandingPage/support/Support';
 import NotFound from './NotFound';
+import Footer from './LandingPage/Footer';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" exact element={<HomePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer/>
         </div>
       </Router>
     </>

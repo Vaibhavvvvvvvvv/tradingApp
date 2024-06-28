@@ -3,7 +3,6 @@ import Hero from './Hero'
 import LeftImg from './LeftImg'
 import RightImg from './RightImg'
 import Universe from './Universe'
-import Footer from '../Footer'
 const Products = () => {
     return (
         <>
@@ -52,7 +51,7 @@ const Products = () => {
   </b></h5>
 
         <Universe />
-        <Footer/>
+        
       </>
     )
 }
