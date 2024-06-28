@@ -4,9 +4,8 @@ import Team from './Team'
 const About = () => {
   return (
     <div>
-<h1>aboout</h1>
     <Hero/>      
-<Team/>
+    <Team/>
     </div>
   )
 }
