@@ -1,22 +1,22 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Awards() {
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-6 p-5">
-          {/* <img src="media/images/largestBroker.svg" /> */}
-          <img src="media\images\ZERODHA-10.png"/>
+        <div className="col-md-6 p-4">
+          <img src="media/images/ZERODHA-10.png" className="img-fluid" alt="Zerodha"/>
         </div>
-        <div className="col-6 p-5 mt-5">
-          <h1>Largest stock broker in India</h1>
-          <p className="mb-5">
+        <div className="col-md-6 p-4 mt-md-0 mt-5">
+          <h1 className="display-4">Largest stock broker in India</h1>
+          <p className="lead mb-4">
             2+ million Zerodha clients contribute to over 15% of all retail
             order volumes in India daily by trading and investing in:
           </p>
           <div className="row">
-            <div className="col-6">
-              <ul>
+            <div className="col-12 col-sm-6">
+              <ul className="list-unstyled">
                 <li>
                   <p>Futures and Options</p>
                 </li>
@@ -28,8 +28,8 @@ function Awards() {
                 </li>
               </ul>
             </div>
-            <div className="col-6">
-              <ul>
+            <div className="col-12 col-sm-6">
+              <ul className="list-unstyled">
                 <li>
                   <p>Stocks & IPOs</p>
                 </li>
@@ -42,7 +42,7 @@ function Awards() {
               </ul>
             </div>
           </div>
-          <img src="media\images\presslogo.jpg" style={{ width: "100%" }} />
+          <img src="media/images/presslogo.jpg" className="img-fluid mt-4" alt="Press Logo"/>
         </div>
       </div>
     </div>
@@ -50,6 +50,3 @@ function Awards() {
 }
 
 export default Awards;
-
-
-
