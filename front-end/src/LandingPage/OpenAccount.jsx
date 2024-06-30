@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const OpenAccount = () => {
   return (
-    <div className="container p-5 mb-5">
+    <div className="container p-5 mb-5 border-top">
       <div className="row text-center">
         <div className="col-12">
           <h1 className="mt-5">Open a Zerodha account</h1>
