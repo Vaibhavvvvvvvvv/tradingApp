@@ -1,25 +1,24 @@
-import React, { useState } from "react";
-
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
+  // Dummy state and handlers for demonstration
   const [selectedMenu, setSelectedMenu] = useState(0);
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
-  const handleMenuClick = (index) => {
-    setSelectedMenu(index);
+  const handleMenuClick = (menuIndex) => {
+    setSelectedMenu(menuIndex);
   };
 
-  const handleProfileClick = (index) => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
+  const handleProfileClick = () => {
+    console.log('Profile clicked');
   };
 
-  const menuClass = "menu";
-  const activeMenuClass = "menu selected";
+  const activeMenuClass = 'active-menu'; // Replace with actual class
+  const menuClass = 'menu'; // Replace with actual class
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
+      <img src="logo.png" style={{ width: "50px" }} alt="Logo" />
       <div className="menus">
         <ul>
           <li>
@@ -69,7 +68,7 @@ const Menu = () => {
           <li>
             <Link
               style={{ textDecoration: "none" }}
-              to="funds"
+              to="/funds"
               onClick={() => handleMenuClick(4)}
             >
               <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
