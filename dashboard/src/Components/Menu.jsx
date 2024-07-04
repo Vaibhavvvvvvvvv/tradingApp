@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 const Menu = () => {
   // Dummy state and handlers for demonstration
   const [selectedMenu, setSelectedMenu] = useState(0);
+  const [isProfileDropdownOpen,setProfileDropdownOpen] = useState(false)
 
-  const handleMenuClick = (menuIndex) => {
-    setSelectedMenu(menuIndex);
+  const handleMenuClick = (index) => {
+    setSelectedMenu(index);
   };
 
-  const handleProfileClick = () => {
+  const handleProfileClick = (index) => {
+    setProfileDropdownOpen(!isProfileDropdownOpen)
     console.log('Profile clicked');
   };
 
@@ -93,6 +95,7 @@ const Menu = () => {
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
         </div>
+        {/* {isProfileDropdownOpen} */}
       </div>
     </div>
   );
