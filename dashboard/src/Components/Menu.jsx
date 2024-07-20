@@ -95,7 +95,7 @@ const Menu = () => {
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
         </div>
-        {/* {isProfileDropdownOpen} */}
+        {isProfileDropdownOpen}
       </div>
     </div>
   );
