@@ -8,8 +8,8 @@ const Positions = () => {
     axios.get("http://localhost:3002/allPositions").then((res)=>{
       console.log(res.data)
       setPosiotions(res.data)
-    })
-  })
+    });
+  },[])
   return (
    <>
    <h3 className="title"> Positions ({allPositions.length})</h3>
