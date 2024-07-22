@@ -2,14 +2,20 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-
+const bodyParser  = require("body-parser")
+const cors = require("cors");
 //add models
-// const { HoldingsModel } = require('./models/HoldingsModel');
-// const { PositionsModel } = require('./models/PositionsModel');
+const { HoldingsModel } = require('./models/HoldingsModel');
+const { PositionsModel } = require('./models/PositionsModel');
 
 const PORT = process.env.PORT || 3002; // Default deployment port
 const uri = process.env.MONGO_URL;
+
+
 const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
 
 //add models data to dataBase
 // app.get('/addHoldings', async (req, res) => {
@@ -175,6 +181,16 @@ const app = express();
 // });
 
 // Mongoose connectivity
+
+app.get('/allHoldings', async(req,res)=>{
+   let allHoldings = await HoldingsModel.find({})
+   res.json(allHoldings);
+});
+
+app.get('/allPositions', async(req,res)=>{
+    let allPositions = await PositionsModel.find({})
+    res.json(allPositions);
+ });
 mongoose.connect(uri, {
     tls: true, // Ensure TLS is enabled
     tlsCAFile: process.env.CA_FILE_PATH // Path to CA certificate if necessary
